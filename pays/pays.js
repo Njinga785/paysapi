@@ -49,7 +49,8 @@ req.onreadystatechange = function (aEvt) {
                   paragraphe4.innerHTML = `Ce pays est situé en ${newTab[i].region}, plus précisément en ${newTab[i].subregion}` 
                   div2.appendChild(paragraphe4);
                   div2.className = ('divjs'); 
-                  mydiv.appendChild(div2);
+                  mydiv.prepend(div2); 
+                  console.log('Thomas');
 
                   /*let paysTab = [flag,  capital, currencies, region, sub-region]; */
                   
